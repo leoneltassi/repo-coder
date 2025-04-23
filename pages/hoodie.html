@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>HOODIE BOXY - PipoShoes</title>
+  </head>
+  <body>
+    <header>
+      <h1>PipoShoes</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./locales.html">Locales</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./giftcards.html">Giftcards</a></li>
+          <li><a href="./guia-de-talles.html">Guía de talles</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="producto">
+        <h2>HOODIE BOXY</h2>
+        <img src="../assets/hoodie.png" alt="HOODIE" />
+        <p><strong>Precio:</strong> $50.000,00</p>
+        <p><strong>Precio con transferencia:</strong> $42.500,00</p>
+        <p><strong>6 cuotas sin interés de:</strong> $8.333,33</p>
+      </section>
+      <section class="producto">
+        
+        <!-- formulario -->
+        <form id="formulario" action="agradecimiento.html" method="get">
+          <div class="seleccion">
+              <div class="genero">
+                  <p>Seleccione su género:</p>
+                  <select class="select" id="select-genero" name="genero" required>
+                      <option value="">--Seleccione--</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="femenino">Femenino</option>
+                      <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                  </select>
+              </div>
+              <div class="medio-pago">
+                  <p>Seleccione medio de pago:</p>
+                  <select class="select" id="select-medio-pago" name="medio_pago" required>
+                      <option value="">--Seleccione--</option>
+                      <option value="transferencia">Transferencia</option>
+                      <option value="tarjeta">Tarjeta Débito/Crédito</option>
+                      <option value="efectivo">Efectivo</option>
+                  </select>
+              </div>
+          </div>
+          <div class="talle-opciones">
+            <p>Seleccione el talle:</p>
+            <label>
+                <input type="radio" name="talle" value="S" required> S
+            </label>
+            <label>
+                <input type="radio" name="talle" value="M"> M
+            </label>
+            <label>
+                <input type="radio" name="talle" value="L"> L
+            </label>
+            <label>
+                <input type="radio" name="talle" value="XL"> XL
+            </label>
+        </div>
+          <div>
+          <button type="submit" class="boton-agregar">Agregar al carrito</button>
+          </div>
+        </form>
+          <section class="otros-productos">
+            <h3>Otros productos</h3>
+            <ul>
+              <li><a href="jeanbaggy.html">JEAN BAGGY - $90.000,00</a></li>
+              <li><a href="remeraboxybasica.html">REMERA BOXY - $20.000,00</a></li>
+              <li><a href="jogging.html">JOGGING BAGGY - $70.000,00</a></li>
+            </ul>
+          </section>
+      
+    </main>
+    <footer>
+      <p>&copy; PipoShoes - 2025. Todos los derechos reservados.</p>
+      <p>
+        <a href="./pages/contacto.html"
+          >Defensa de las y los consumidores. Para reclamos ingresá acá.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Giftcard 2</title>
+  </head>
+  <header>
+    <h1>PipoShoes</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./locales.html">Locales</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./giftcards.html">Giftcards</a></li>
+        <li><a href="./guia-de-talles.html">Guía de talles</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <img src="../assets/logo.png" alt="giftcard-uno" />
+    </div>
+    <div>
+      <p>GIFTCARD</p>
+      <p>30.000,00</p>
+    </div>
+    <form id="formulario" action="agradecimiento.html" method="get">
+      <div class="seleccion">
+        <div class="medio-pago">
+          <p>Seleccione medio de pago:</p>
+          <select
+            class="select"
+            id="select-medio-pago"
+            name="medio_pago"
+            required
+          >
+            <option value="">--Seleccione--</option>
+            <option value="transferencia">Transferencia</option>
+            <option value="tarjeta">Tarjeta Débito/Crédito</option>
+            <option value="efectivo">Efectivo</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="boton-agregar">Agregar al carrito</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; PipoShoes - 2025. Todos los derechos reservados.</p>
+    <p>
+      <a href="./pages/contacto.html"
+        >Defensa de las y los consumidores. Para reclamos ingresá acá.</a
+      >
+    </p>
+  </footer>
+  <body></body>
+</html>
