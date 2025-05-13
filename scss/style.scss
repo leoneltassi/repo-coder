@@ -1,0 +1,97 @@
+$primary-color: #333;
+$secondary-color: #555;
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+$large-screen: 1600px;
+
+// **Mixin para el padding general**
+@mixin padding-custom($size) {
+  padding: $size;
+}
+
+// **Clase base para extender estilos**
+.base-box {
+  background: $secondary-color;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+// **Estilos generales**
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  @include padding-custom(0);
+}
+
+header {
+  background: $primary-color;
+  color: white;
+  @include padding-custom(1rem);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0 15px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include padding-custom(20px);
+}
+
+.producto {
+  @extend .base-box;
+  @include padding-custom(15px);
+  margin: 10px;
+  max-width: 300px;
+}
+
+// **Media Queries**
+@media screen and (max-width: $mobile) {
+  body {
+    font-size: 14px;
+  }
+  .producto {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .productos {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  header {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  body {
+    font-size: 18px;
+  }
+}

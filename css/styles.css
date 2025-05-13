@@ -1,3 +1,83 @@
+.base-box,
+.producto {
+  background: #555;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.producto {
+  padding: 15px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .producto {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .productos {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/* aplico aca mi css anterior, porque se superpuso al usar sass */
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -609,8 +689,6 @@ footer {
   margin-top: 15px;
 }
 
-/* RESPONSIVE */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -668,78 +746,4 @@ section {
 
 .Contacto {
   display: block;
-}
-
-/* RESPONSIVE */
-
-/* Escritorio */
-body {
-  font-size: 16px;
-}
-
-/* Entre 768px y 1024px*/
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 14px;
-  }
-  .container {
-    width: 90%;
-  }
-}
-
-/* Hasta 767px */
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 12px;
-  }
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .navbar-nav .nav-item {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* Hasta 360px */
-@media screen and (max-width: 360px) {
-  body {
-    font-size: 10px;
-  }
-  .container {
-    width: 100%;
-    padding: 2px;
-  }
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .navbar-nav .nav-item {
-    width: 100%;
-    text-align: center;
-  }
-  .product-card {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .promo-banner {
-    font-size: 12px;
-    padding: 8px;
-  }
 }
